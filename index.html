@@ -1,0 +1,207 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>WriteMate</title>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap"
+    />
+    <link rel="stylesheet" href="css/output.css" />
+    <style>
+      * {
+        scroll-behavior: smooth;
+      }
+      .animated-text {
+        background-image: linear-gradient(-225deg, #8c00ff, #fcfc4b, #ff2f52 58%, #00fff2);
+        color: #fff;
+        background-size: 200% auto;
+        background-clip: border-box;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        animation: textclip 2s linear(0.12 15%, 1.5 70%) infinite;
+      }
+      footer a:hover {
+        text-decoration: underline;
+      }
+    </style>
+  </head>
+  <body class="font-quicksand overflow-x-hidden scroll-smooth text-secondary">
+    <header class="flex items-center justify-between px-8 py-4 md:pl-16">
+      <div>
+        <img
+          src="images/writemate-transparent.png"
+          alt="ai writemate logo"
+          class="w-28 md:w-52"
+        />
+      </div>
+      <div class="md:flex hidden decoration-transparent gap-12 font-semibold">
+        <a href="#how">How It Works</a>
+        <a href="#faq">FAQ</a>
+        <a href="#">Pricing</a>
+      </div>
+      <div>
+        <button id="headerCta"
+          class="bg-majerela-blue px-6 py-2 text-white text-sm rounded-md hover:bg-transparent hover:border-2 hover:border-majerela-blue hover:text-majerela-blue"
+        >
+          Get Started
+        </button>
+      </div>
+    </header>
+
+    <div class="flex flex-col justify-center-center w-screen p-3 text-center">
+      <div>
+        <div class="flex items-center justify-center">
+          <img src="images/star.png" />
+          <p class="text-majerela-blue">Your AI Writing Companion</p>
+        </div>
+        <div class="pb-8 mx-auto">
+          <p class="mx-auto font-bold text-3xl md:text-5xl md:w-[40rem]">
+            Challenged by that task? Your <span class="animated-text">WriteMate</span> can help!
+          </p>
+          <p class="md:w-[32rem] mx-auto">
+            Tap into AI's potential for efficient learning. Ask any tough
+            question about complex concepts and receive simplified explanations.
+          </p>
+          <div class="flex flex-col pt-6 items-center">
+            <a href="/signup.html" class="grid relative active:scale-90 transition-all">
+              <div
+                class="absolute -inset-1 bg-gradient-to-r from-yellow-400 via-red-400 to-majerela-blue blur opacity-75"
+              ></div>
+              <button
+                id="herobtn"
+                class="relative mx-auto bg-black text-white px-3 py-2 rounded-md flex items-center gap-2"
+              >
+                Free study with AI
+                <img src="images/svgexport-1.svg" class="w-3" />
+              </button>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="mx-auto">
+        <img
+          src="images/study session chat interface mobile.845f0dcb.png"
+          alt="study session chat interface"
+          class="md:hidden mx-auto"
+        />
+        <img
+          src="images/study session chat interface.845f0dcb.png"
+          alt="study session chat interface"
+          class="mx-auto hidden md:block w-[80%]"
+        />
+      </div>
+      <div id="how" class="bg-lavender mt-12 p-8 gap-8 flex flex-col">
+        <div>
+          <p class="font-bold text-3xl">How it works ?</p>
+          <p class="font-normal">Easy way to begin!</p>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+          <div class="relative bg-white rounded-2xl">
+            <p
+              class="absolute top-3 left-7 z-10 bg-majerela-blue rounded-full w-6 h-6 text-white font-semibold flex items-center justify-center"
+            >
+              1
+            </p>
+            <img
+              src="images/upload preview.1c899a03.png"
+              alt="upload preview"
+            />
+          </div>
+          <div
+            class="relative bg-white rounded-2xl flex flex-col gap-3 pt-5 px-4"
+          >
+            <p
+              class="absolute top-3 left-3 z-10 bg-majerela-blue rounded-full w-6 h-6 text-white font-semibold flex items-center justify-center"
+            >
+              2
+            </p>
+            <img
+              src="images/ai in action preview.ad8302b3.png"
+              alt="upload preview"
+              class="mx-auto"
+            />
+            <div>
+              <p class="font-bold">Answers to anything!</p>
+              <p>Get answers to your test and assingments</p>
+            </div>
+          </div>
+        </div>
+        <div class="flex flex-col items-center">
+          <a href="./signup.html" class="relative grid">
+            <div
+              class="absolute -inset-1 bg-gradient-to-r from-yellow-400 via-red-400 to-majerela-blue blur opacity-75"
+            ></div>
+            <button id="lastCta"
+              class="relative bg-black text-white font-medium px-5 py-3 rounded-md"
+            >
+              Get started for free
+            </button>
+          </a>
+        </div>
+      </div>
+    </div>
+    <div id="faq" class="mx-auto flex flex-col gap-6 py-8 w-[90%] md:w-[70%]">
+      <p class="mx-auto font-bold text-2xl">FAQS</p>
+      <div class="faq bg-lavender p-6 flex flex-col gap-6 rounded-lg">
+        <div>
+          <div class="flex items-center gap-3">
+            <img id="toggle" src="images/icon-plus.svg" />
+            <p class="question1 font-medium">
+              What makes this different from many other 'Chat AI'?
+            </p>
+          </div>
+          <div class="answer hidden">
+            <p>
+              This AI is <span class="font-medium">Trained</span> to help
+              students with assignment and test. It also interacts as a student.
+            </p>
+          </div>
+        </div>
+        <div>
+          <div class="flex items-center gap-3">
+            <img id="toggle" src="images/icon-plus.svg" />
+            <p class="question2 font-medium">Can I cancel my subscription?</p>
+          </div>
+          <div class="answer hidden">
+            <p>
+              You can cancel at anytime, contact us for help with that. No
+              questions asked.
+            </p>
+          </div>
+        </div>
+        <div>
+          <div class="flex items-center gap-3">
+            <img id="toggle" src="images/icon-plus.svg" />
+            <p class="question1 font-medium">How many images can I upload?</p>
+          </div>
+          <div class="answer hidden">
+            <p>
+              The free plan has a minimum of 5 files, while on the PRO plan you
+              can upload upto 50 files
+            </p>
+          </div>
+        </div>
+        <div>
+          <div class="flex items-center gap-3">
+            <img id="toggle" src="images/icon-plus.svg" />
+            <p class="question1 font-medium">Do my upload have size limit?</p>
+          </div>
+          <div class="answer hidden">
+            <p>Yes, 15mb on the free plan and 40mb on the PRO plan.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer class="bg-lavender flex flex-wrap justify-center text-nowrap gap-3 px-4 items-center py-6">
+        <a href="#">Pricing</a>
+        <a href="#how">How it works</a>
+        <a href="#faq">FAQS</a>
+        <a href="#">Privacy policy</a>
+        <a href="#">Terms of service</a>
+        <a href="#">Contact</a>
+      </div>
+    </footer>
+    <script src="index.js"></script>
+  </body>
+</html>

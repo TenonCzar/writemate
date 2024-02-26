@@ -1,0 +1,54 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sign Up</title>
+    <link rel="stylesheet" href="css/output.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&display=swap"
+    />
+  </head>
+  <body class="flex flex-col gap-8 font-comforta">
+    <img
+      src="images/vectorbg.jpg"
+      class="opacity-[0.03] fixed top-1 w-screen z-0"
+      alt=""
+    />
+    <div>
+      <img
+        src="images/writemate-transparent.png"
+        alt="write mate logo"
+        class="mx-auto w-52 mt-20"
+      />
+    </div>
+
+    <div
+      class="mx-auto flex flex-col items-center w-[90%] max-w-[25rem] bg-white z-10 px-4 py-7 gap-4 md:gap-7 shadow-xl"
+    >
+      <div class="mb-4 flex flex-col w-full">
+        <p class="font-bold text-3xl">Signup</p>
+        <p class="text-xs text-majerela-blue font-medium">
+          Create an account to access WriteMate.
+        </p>
+      </div>
+      <div
+        class="mx-auto w-full flex items-center gap-3 justify-center border-lavender border-2 py-2"
+      >
+        <img src="images/icons8-google-48.png" alt="sign up with google" class="w-10" />
+        <a href="#" class="font-medium">CONTINUE WITH GOOGLE</a>
+      </div>
+      <div class="flex justify-center gap-2 items-center w-full">
+        <div class="h-[1px] w-[50%] bg-lavender"></div>
+        <p>or</p>
+        <div class="h-[1px] w-[50%] bg-lavender"></div>
+      </div>
+      <div class="w-full">
+        <form method="post" class="flex flex-col gap-8">
+            <input type="email" name="mail" id="email" placeholder="Email" class="border-lavender border-2 w-full px-3 py-4 outline-1 outline-majerela-blue placeholder:font-semibold" required>
+            <button type="submit" class="bg-majerela-blue mx-auto text-xl text-white font-semibold py-3 px-4 w-full">SignUp</button>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
