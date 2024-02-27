@@ -32,12 +32,16 @@
           Create an account to access WriteMate.
         </p>
       </div>
-      <div
+      <a href="#"
         class="mx-auto w-full flex items-center gap-3 justify-center border-lavender border-2 py-2"
       >
-        <img src="images/icons8-google-48.png" alt="sign up with google" class="w-10" />
-        <a href="#" class="font-medium">CONTINUE WITH GOOGLE</a>
-      </div>
+        <img
+          src="images/icons8-google-48.png"
+          alt="sign up with google"
+          class="w-10"
+        />
+        <p href="#" class="font-medium">CONTINUE WITH GOOGLE</p>
+      </a>
       <div class="flex justify-center gap-2 items-center w-full">
         <div class="h-[1px] w-[50%] bg-lavender"></div>
         <p>or</p>
@@ -45,10 +49,22 @@
       </div>
       <div class="w-full">
         <form method="post" class="flex flex-col gap-8">
-            <input type="email" name="mail" id="email" placeholder="Email" class="border-lavender border-2 w-full px-3 py-4 outline-1 outline-majerela-blue placeholder:font-semibold" required>
-            <button type="submit" class="bg-majerela-blue mx-auto text-xl text-white font-semibold py-3 px-4 w-full">SignUp</button>
+          <input
+            type="email"
+            name="mail"
+            id="email"
+            placeholder="Email"
+            class="border-lavender border-2 w-full px-3 py-4 outline-1 outline-majerela-blue placeholder:font-semibold"
+            required title="please input your email"
+          />
+          <button
+            type="submit"
+            class="bg-majerela-blue mx-auto text-xl text-white font-semibold py-3 px-4 w-full"
+          >
+            SignUp
+          </button>
         </form>
-        <a href="#" class="text-majerela-blue underline">Forgot password?</a>
+        <p>Already have an account?<a href="/login.html" class="text-majerela-blue underline"> Login Here</a></p>
       </div>
     </div>
   </body>
